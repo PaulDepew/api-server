@@ -1,0 +1,46 @@
+{
+  "categories": [
+    {
+      "name": "Bellevue",
+      "id": 2
+    },
+    {
+      "name": "dave",
+      "id": 3
+    },
+    {
+      "name": "bill",
+      "id": 4
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "category": "art",
+      "name": "crayon",
+      "display_name": "Crayola",
+      "description": "The greatest art instrument in history"
+    },
+    {
+      "name": "john",
+      "category": "person",
+      "description": "he is ok",
+      "price": 1.99,
+      "id": 2
+    },
+    {
+      "name": "garhett",
+      "category": "person",
+      "description": "he is ok",
+      "price": 1.99,
+      "id": 3
+    },
+    {
+      "name": "julio",
+      "category": "person",
+      "description": "he is ok",
+      "price": 1.99,
+      "id": 4
+    }
+  ]
+}

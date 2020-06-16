@@ -1,0 +1,25 @@
+{
+  "name": "api-server",
+  "version": "1.0.0",
+  "description": "# API Server",
+  "main": "index.js",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "json-server --watch ./data/db.json",
+    "test": "jest --verbose --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PaulDepew/api-server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PaulDepew/api-server/issues"
+  },
+  "homepage": "https://github.com/PaulDepew/api-server#readme"
+}
