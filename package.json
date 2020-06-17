@@ -4,12 +4,18 @@
   "description": "# API Server",
   "main": "index.js",
   "dependencies": {
-    "live-server": "^1.2.1"
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "json-server": "^0.16.1",
+    "killport": "^1.0.1",
+    "live-server": "^1.2.1",
+    "nodemon": "^2.0.4"
   },
   "devDependencies": {},
   "scripts": {
-    "start": "json-server --watch ./data/db.json",
-    "test": "jest --verbose --coverage"
+    "watch": "json-server --watch ./data/db.json",
+    "test": "jest --verbose --coverage",
+    "start": "nodemon index.js"
   },
   "repository": {
     "type": "git",
