@@ -2,13 +2,19 @@
 
 
 const server = require('./lib/server.js');
+const mongoose = require('mongoose');
 require('dotenv').config();
 
 const PORT = process.env.PORT || 3000;
 
-server.listen(PORT, ()=> {
-  console.log(`Server is up on port: ${PORT}`);
+mongoose.connect(process.env.MONGO_ATLAS_URI, {
+  useCreateIndex: true,
+  useUnifiedTopology: true,
+  useNewUrlParser: true,
 });
+
+
+server.start(PORT);
 
 
 
