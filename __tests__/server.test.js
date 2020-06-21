@@ -6,6 +6,14 @@ const server = require('../lib/server');
 
 const mockRequest = supergoose.server(server.server);
 
+beforeAll(() => {
+  supergoose.startDB();
+});
+
+afterAll(()=> {
+  supergoose.stopDB();
+});
+
 jest.spyOn(console, 'log').mockImplementation();
 
 

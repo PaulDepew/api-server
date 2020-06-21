@@ -1,5 +1,10 @@
 'use strict';
 
+/**
+ *  Category Class
+ * @module Category
+ */
+
 const schema = require('./categories-schema');
 const Model = require('../mongo-interface');
 

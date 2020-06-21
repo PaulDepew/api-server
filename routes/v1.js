@@ -2,6 +2,10 @@
 
 // Dynamically handles model logic based on parameters attached to the request
 
+/** API module
+ * @module api
+ */
+
 const express = require('express');
 const router = express.Router(); 
 
@@ -18,6 +22,16 @@ router.post('/:model', handleCreate);
 router.put('/:model/:id', handleUpdate);
 router.delete('/:model/:id', handleDelete);
 
+
+/**
+ * getOne - gets the requested thing from the database
+ * @function handleGetById
+ * @param {*} request 
+ * @param {*} response 
+ * @returns {object}
+ */
+
+
 async function handleGetById(req, res){
   const Id = req.params.id;
   const results = await req.model.get(Id);
@@ -25,11 +39,27 @@ async function handleGetById(req, res){
   
 }
 
+/**
+ * getAll - gets all of the requested things from the database
+ * @function handleGetAll
+ * @param {*} request 
+ * @param {*} response 
+ * @returns {object}
+ */
+
 async function handleGetAll(req, res){
   const results = await req.model.get();
   res.send(results);
   
 }
+
+/**
+ * addOne - adds one thing to the database
+ * @function handleCreate
+ * @param {*} request 
+ * @param {*} response 
+ * @returns {object}
+ */
 
 async function handleCreate(req, res){
   const results = await req.model.create(req.body);
@@ -37,10 +67,27 @@ async function handleCreate(req, res){
   
 }
 
+
+/**
+ * updateOne - updates a thing in the database
+ * @function handleUpdate
+ * @param {*} request 
+ * @param {*} response 
+ * @returns {string}
+ */
+
 async function handleUpdate(req, res){
   const results = await req.model.update(req.params.id, req.body);
   res.send('Updated! ' + req.params.id);
 }
+
+/**
+ * deleteOne - deletes a thing from the database
+ * @function handleDelete
+ * @param {*} request 
+ * @param {*} response 
+ * @returns {string}
+ */
 
 async function handleDelete(req, res){
   const results = await req.model.delete(req.params.id);

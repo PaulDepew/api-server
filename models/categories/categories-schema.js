@@ -1,5 +1,11 @@
 'use strict';
 
+
+/**
+ * Categories schema
+ * @module categories-schema
+ */
+
 const mongoose = require('mongoose');
 
 const schema = new mongoose.Schema({

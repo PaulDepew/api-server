@@ -1,5 +1,11 @@
 'use strict';
 
+/**
+ * Mongo Interface class
+ * @module MongoInterface
+ */
+
+
 class MongoInterface {
 
   constructor(schema){
