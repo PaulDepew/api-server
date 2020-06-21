@@ -6,7 +6,7 @@
  * @module getModel
  */
 
- /**
+/**
   * getModel creates the model needed for the request
   * @param request
   * @param response

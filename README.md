@@ -6,7 +6,7 @@
 
 - [submission PR](https://github.com/PaulDepew/api-server)
 - [swagger.io](https://app.swaggerhub.com/apis/PaulDepew/Live-Server_test/0.1)
-
+- [Heroku Deployment](https://lab10-api-server-test.herokuapp.com/)
 
 ### Setup
 
@@ -27,7 +27,7 @@ set MONGO_ATLAS_URI = YOUR_MONGO_ATLAS_URI
 #### Running the app
 
 npm start
-  - runs `live-server db.json --routes routes.json`
+  - Starts the server on your local host with the port you defined in you .env
 
 
 #### Tests
