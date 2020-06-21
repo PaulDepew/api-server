@@ -21,8 +21,8 @@ Send methods to the designated routes
 
 #### `.env` requirements
 
-PORT = 3000
-MONGO_ATLAS_URI = YOUR_MONGO_ATLAS_URI
+set PORT = 3000
+set MONGO_ATLAS_URI = YOUR_MONGO_ATLAS_URI
 
 #### Running the app
 
@@ -33,9 +33,9 @@ npm start
 #### Tests
 
 npm test 
-  - runs a jest testing suite to test our DB connections and CRUD functions
+  - runs a jest testing suite to test our DB connections, CRUD functions and middleware
 
 
 #### UML
 
-![UML Diagram](https://atlas.mindmup.com/courtofavalon/a_request_comes_into_our_port_and_is_sen/thumb.png)
+![UML Diagram](https://atlas.mindmup.com/courtofavalon/a_request_is_sent_to_our_server/index.html)

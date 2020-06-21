@@ -1,5 +1,10 @@
 'user strict';
 
+/**
+ * Entry Index
+ * @module Index
+ */
+
 
 const server = require('./lib/server.js');
 const mongoose = require('mongoose');
