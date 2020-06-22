@@ -9,6 +9,6 @@ let next = jest.fn();
 describe( 'Testing the Timestamp', ()=> {
   it('check to see if the timestamp exists', ()=> {
     timestamp(request, response, next);
-    expect(request.requestTime).not.toBo(null);
+    expect(request.requestTime).not.toBe(null);
   });
 });

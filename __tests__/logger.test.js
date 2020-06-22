@@ -6,7 +6,7 @@ let request = { method: 'test', path: 'GET', requestTime: 'now'};
 let response = {};
 let next = jest.fn();
 
-jest.spyOn(console, 'log').mockimplementation();
+jest.spyOn(console, 'log').mockImplementation();
 
 describe('test the logger logs', () => {
   it('should find a log', ()=> {

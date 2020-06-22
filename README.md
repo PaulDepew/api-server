@@ -3,6 +3,9 @@
 # API Server
 
 ### Author: Paul Depew
+#### Acknowledgements: 
+  - Marlene Rinkler for teaching me tests and JSdoc
+  - Gharett Morgan for working together through this
 
 - [submission PR](https://github.com/PaulDepew/api-server)
 - [swagger.io](https://app.swaggerhub.com/apis/PaulDepew/Live-Server_test/0.1)
@@ -12,6 +15,13 @@
 
 Clone the Git repository
 Install Dependencies
+  - dotenv
+  - express
+  - mongoose 
+  - cf-supergoose 
+  - JSDoc
+  - jest
+
 Run npm start
 Go to an API request interface like Swagger.io or Postman
 Enter the localhost port address
@@ -22,7 +32,7 @@ Send methods to the designated routes
 #### `.env` requirements
 
 set PORT = 3000
-set MONGO_ATLAS_URI = YOUR_MONGO_ATLAS_URI
+set MONGO_ATLAS_URI = mongodb+srv://<yourName>:<yourPassword>@cluster0-ydvvi.mongodb.net/<yourDB>?retryWrites=true&w=majority
 
 #### Running the app
 
